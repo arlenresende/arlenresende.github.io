@@ -1,0 +1,48 @@
+.box{
+    background-color: #111;
+    padding: 2rem;
+    border-radius: 5px;
+    margin-top: 5rem;
+    .contentBox{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @media (max-width: 720px){
+            display: block;
+        }
+        img{
+            margin-right: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .text{
+            h3{
+                font-weight: 600;
+                font-size: 1.7rem;
+                line-height: 2.5rem;
+            }
+            img{
+                display: block;
+                margin: 1.2rem 0;
+            }
+            p{
+                font-weight: 300;
+                font-size: 1.2rem;
+                line-height: 2rem;
+                strong{
+                    display: block;
+                }
+            }
+            .social{
+                margin-top: 1rem;
+               a{
+                margin-right: 1rem;
+              &:hover{
+                  svg{
+                      fill: var(--blue-500);
+                  }
+              }
+               }
+            }
+        }
+    }
+}
